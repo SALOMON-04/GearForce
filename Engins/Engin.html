@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Engin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <title>Engins</title>
+</head>
+
+<body>
+
+
+    <!-- Ici ce trouve le Header -->
+    <header>
+        <!-- LOGO -->
+
+        <div class="logo">
+            <img src="../Image/logo.png" alt="logo de la page">
+            <span class="Gear">Gear<span class="Force">Force</span></span>
+
+        </div>
+
+        <nav class="mes_page">
+
+            <ul>
+
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-chart-bar" style="color: rgb(255, 255, 255);"></i>
+                        Dashbord
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-gears" style="color: white;"></i>
+                        <span>Engins</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-map-location-dot" style="color: rgb(255, 255, 255);"></i>
+                        Suivi
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="chariot_connexion">
+
+            <i class="fa-solid fa-cart-plus" style="color: rgb(255, 255, 255);"></i>
+
+            <div class="profil">
+
+                <img src="../Image/perso3.png" alt="profil de l'utilisateru">
+                <div class="nom">
+                    <span>KOUAKOU JEAN</span>
+                    <span class="fonction">CHEf de chantier</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="recherche">
+       <i class="fa-solid fa-magnifying-glass"></i>
+       <input type="text" placeholder="Rechercher l'engin dont vous avez besoins...">
+    </div>
+
+    <span class="pacourir">
+        Parcourez notre sélection complète d'équipements lourds
+    </span>
+
+
+    <section class="categorie">
+
+        <div class="machines">
+            <span>Catégories</span>
+
+            <div>
+
+                <span class="tous">Tous</span>
+                <span class="grise">Grue</span>
+                <span class="grise">Foreuse</span>
+                <span class="grise">Escavatrice</span>
+                <span class="grise">Buldozer</span>
+                <span class="grise">Poids loudrs</span>
+                <span class="grise">Caterpilare</span>
+            </div>
+
+            <label>
+                <input type="checkbox">
+                Afficher uniquement les équipements disponibles
+            </label>
+
+        </div>
+
+    </section>
+            
+
+           <!-- les carte des differentes machine disponible -->
+
+    <section class="engin">
+
+
+        <div class="machine">
+            
+            <div class="image_disponible">
+                <img src="../Image/image5.jpg" alt="image d'un Buldozer">
+                <span class="disponible"><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255);"></i>Disponible</span>
+            </div>
+
+            <div class="nom_machine_prix">
+                <h3>BULDOZER <br> ZHEDIX</h3>
+                <span class="prix">100.000fr <br><span>/jour</span></span>
+            </div>
+
+            <span class="capaciter">CASE CONSTRUCTION + 8 TONNES</span>
+
+            <div class="puissance_vitesse">
+
+                <div class="vitesse">
+                    <i class="fa-solid fa-circle-arrow-up" style="color: rgb(255, 119, 0);"></i>
+                    <span>Vitesse:<br>11Km/h </span>
+                </div>
+
+                <div class="puissance">
+                    <i class="fa-solid fa-gauge-high" style="color: rgb(255, 119, 0);"></i>
+                    <span>Puissance:<br>7ch</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="reservation">
+                <span>RESERVER MEINTENANT</span>
+            </div>
+
+        </div>
+
+
+
+        <div class="machine">
+            
+             <div class="image_disponible">
+                <img src="../Image/image5.jpg" alt="image d'un Buldozer">
+                <span class="disponible"><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255);"></i>Disponible</span>
+            </div>
+
+            <div class="nom_machine_prix">
+                <h3>BULDOZER <br> ZHEDIX</h3>
+                <span class="prix">100.000fr <br><span>/jour</span></span>
+            </div>
+
+            <span class="capaciter">CASE CONSTRUCTION + 8 TONNES</span>
+
+            <div class="puissance_vitesse">
+
+                <div class="vitesse">
+                    <i class="fa-solid fa-circle-arrow-up" style="color: rgb(255, 119, 0);"></i>
+                    <span>Vitesse:<br>11Km/h </span>
+                </div>
+
+                <div class="puissance">
+                    <i class="fa-solid fa-gauge-high" style="color: rgb(255, 119, 0);"></i>
+                    <span>Puissance:<br>7ch</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="reservation">
+                <span>RESERVER MEINTENANT</span>
+            </div>
+
+        </div>
+
+
+
+        <div class="machine">
+            
+             <div class="image_disponible">
+                <img src="../Image/image5.jpg" alt="image d'un Buldozer">
+                <span class="disponible"><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255);"></i>Disponible</span>
+            </div>
+
+            <div class="nom_machine_prix">
+                <h3>BULDOZER <br> ZHEDIX</h3>
+                <span class="prix">100.000fr <br><span>/jour</span></span>
+            </div>
+
+            <span class="capaciter">CASE CONSTRUCTION + 8 TONNES</span>
+
+            <div class="puissance_vitesse">
+
+                <div class="vitesse">
+                    <i class="fa-solid fa-circle-arrow-up" style="color: rgb(255, 119, 0);"></i>
+                    <span>Vitesse:<br>11Km/h </span>
+                </div>
+
+                <div class="puissance">
+                    <i class="fa-solid fa-gauge-high" style="color: rgb(255, 119, 0);"></i>
+                    <span>Puissance:<br>7ch</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="reservation">
+                <span>RESERVER MEINTENANT</span>
+            </div>
+
+        </div>
+
+
+
+        <div class="machine">
+            
+             <div class="image_disponible">
+                <img src="../Image/image5.jpg" alt="image d'un Buldozer">
+                <span class="disponible"><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255);"></i>Disponible</span>
+            </div>
+
+            <div class="nom_machine_prix">
+                <h3>BULDOZER <br> ZHEDIX</h3>
+                <span class="prix">100.000fr <br><span>/jour</span></span>
+            </div>
+
+            <span class="capaciter">CASE CONSTRUCTION + 8 TONNES</span>
+
+            <div class="puissance_vitesse">
+
+                <div class="vitesse">
+                    <i class="fa-solid fa-circle-arrow-up" style="color: rgb(255, 119, 0);"></i>
+                    <span>Vitesse:<br>11Km/h </span>
+                </div>
+
+                <div class="puissance">
+                    <i class="fa-solid fa-gauge-high" style="color: rgb(255, 119, 0);"></i>
+                    <span>Puissance:<br>7ch</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="reservation">
+                <span>RESERVER MEINTENANT</span>
+            </div>
+
+        </div>
+
+
+
+        <div class="machine">
+            
+             <div class="image_disponible">
+                <img src="../Image/image5.jpg" alt="image d'un Buldozer">
+                <span class="disponible"><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255);"></i>Disponible</span>
+            </div>
+
+            <div class="nom_machine_prix">
+                <h3>BULDOZER <br> ZHEDIX</h3>
+                <span class="prix">100.000fr <br><span>/jour</span></span>
+            </div>
+
+            <span class="capaciter">CASE CONSTRUCTION + 8 TONNES</span>
+
+            <div class="puissance_vitesse">
+
+                <div class="vitesse">
+                    <i class="fa-solid fa-circle-arrow-up" style="color: rgb(255, 119, 0);"></i>
+                    <span>Vitesse:<br>11Km/h </span>
+                </div>
+
+                <div class="puissance">
+                    <i class="fa-solid fa-gauge-high" style="color: rgb(255, 119, 0);"></i>
+                    <span>Puissance:<br>7ch</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="reservation">
+                <span>RESERVER MEINTENANT</span>
+            </div>
+
+        </div>
+
+
+        <div class="machine">
+            
+             <div class="image_disponible">
+                <img src="../Image/image5.jpg" alt="image d'un Buldozer">
+                <span class="disponible"><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255);"></i>Disponible</span>
+            </div>
+
+            <div class="nom_machine_prix">
+                <h3>BULDOZER <br> ZHEDIX</h3>
+                <span class="prix">100.000fr <br><span>/jour</span></span>
+            </div>
+
+            <span class="capaciter">CASE CONSTRUCTION + 8 TONNES</span>
+
+            <div class="puissance_vitesse">
+
+                <div class="vitesse">
+                    <i class="fa-solid fa-circle-arrow-up" style="color: rgb(255, 119, 0);"></i>
+                    <span>Vitesse:<br>11Km/h </span>
+                </div>
+
+                <div class="puissance">
+                    <i class="fa-solid fa-gauge-high" style="color: rgb(255, 119, 0);"></i>
+                    <span>Puissance:<br>7ch</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="reservation">
+                <span>RESERVER MEINTENANT</span>
+            </div>
+
+        </div>
+
+
+
+        <div class="machine">
+           
+             <div class="image_disponible">
+                <img src="../Image/image5.jpg" alt="image d'un Buldozer">
+                <span class="disponible"><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255);"></i>Disponible</span>
+            </div>
+
+            <div class="nom_machine_prix">
+                <h3>BULDOZER <br> ZHEDIX</h3>
+                <span class="prix">100.000fr <br><span>/jour</span></span>
+            </div>
+
+            <span class="capaciter">CASE CONSTRUCTION + 8 TONNES</span>
+
+            <div class="puissance_vitesse">
+
+                <div class="vitesse">
+                    <i class="fa-solid fa-circle-arrow-up" style="color: rgb(255, 119, 0);"></i>
+                    <span>Vitesse:<br>11Km/h </span>
+                </div>
+
+                <div class="puissance">
+                    <i class="fa-solid fa-gauge-high" style="color: rgb(255, 119, 0);"></i>
+                    <span>Puissance:<br>7ch</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="reservation">
+                <span>RESERVER MEINTENANT</span>
+            </div>
+
+        </div>
+
+
+        <div class="machine">
+            
+             <div class="image_disponible">
+                <img src="../Image/image5.jpg" alt="image d'un Buldozer">
+                <span class="disponible"><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255);"></i>Disponible</span>
+            </div>
+
+            <div class="nom_machine_prix">
+                <h3>BULDOZER <br> ZHEDIX</h3>
+                <span class="prix">100.000fr <br><span>/jour</span></span>
+            </div>
+
+            <span class="capaciter">CASE CONSTRUCTION + 8 TONNES</span>
+
+            <div class="puissance_vitesse">
+
+                <div class="vitesse">
+                    <i class="fa-solid fa-circle-arrow-up" style="color: rgb(255, 119, 0);"></i>
+                    <span>Vitesse:<br>11Km/h </span>
+                </div>
+
+                <div class="puissance">
+                    <i class="fa-solid fa-gauge-high" style="color: rgb(255, 119, 0);"></i>
+                    <span>Puissance:<br>7ch</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="reservation">
+                <span>RESERVER MEINTENANT</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="map"></div>
+
+    <script src="Engin.js"></script>
+
+</body>
+
+</html>

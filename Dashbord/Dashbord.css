@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+      /*  HEADER  */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 2%;
+    font-size: 1.1em;
+   
+}
+
+     /* LOGO  */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo .Gear {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF7700;
+}
+
+.logo .Force {
+    color: white;
+}
+
+     /* NAVIGATION */
+
+.mes_page ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mes_page ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+
+.mes_page ul li a span{
+    color: #ff6a00;
+}
+
+.mes_page ul li a:hover {
+    color: #ff6a00;
+}
+
+     /* CHARIOT ET PROFIL  */
+
+.chariot_connexion {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    gap: 2em;
+   
+}
+
+.chariot_connexion > i {
+    font-size: 1.2em;
+    cursor: pointer;
+   
+}
+
+.chariot_connexion > i:hover {
+    color: #ff6a00;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    cursor: pointer;
+}
+
+.profil img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #ff6a00;
+}
+
+.nom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.nom span {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.nom .fonction {
+    color: #ff6a00;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+
+
+       /* SECTION MINI BLOCS */
+
+.mini_blok {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2% 3%;
+
+}
+
+
+      /* LIGNES HAUT ET BAS */
+
+
+.mini_blok .haut,
+.mini_blok .bas {
+    display: flex;
+    gap: 1.5em;
+}
+
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 10%;
+    gap: 0.2em;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5em 1.5em;
+    width: 30%;
+}
+
+
+.block > span:first-child {
+    color: #333;
+    font-size: 1em;
+}
+
+
+.nombre {
+    color: #ff7700;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+
+.vert {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    color: #00c48c;
+    font-size: 1em;
+}
+
+
+.noire {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    color: #555;
+    font-size: 1em;
+}
+
+
+.violet {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    color: #9724ff;
+    font-size: 1em;
+}
+
+
+
+
+     /* CSS DE LA SECTION COMMANDE  */
+
+
+.commande {
+    background-color: white;
+    border: 2px solid #ff7700;
+    border-radius: 14px;
+    padding: 1.5em 2em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+}
+
+
+.mes_commande {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    
+}
+
+.mes_commande h2 {
+    color: #111;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.mes_commande span {
+    color: #ff7700;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+
+.block_commande {
+    border: 1px solid #ff7700;
+    border-radius: 10px;
+    padding: 1em 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+
+.nid_prix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nid {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.nid span:first-child {
+    color: #888;
+    font-size: 0.82rem;
+}
+
+
+.en_cours {
+    background-color: #2563eb;
+    font-size: 0.8em !important;
+    font-weight: bold;
+    padding: 0.25em 0.8em;
+    border-radius: 20px;
+}
+
+
+   /* = TERMINE  */
+
+.termine {
+    background-color: #16a34a;
+    color: white !important;
+    font-size: 1em !important;
+    font-weight: bold;
+    padding: 0.25em 0.8em;
+    border-radius: 20px;
+}
+
+
+.prix {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.argent {
+    color: #111;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.prix span:last-child {
+    color: #aaa;
+    font-size: 0.8em;
+}
+
+
+.nom_engin {
+    color: #111;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+      /* DATE + VOIR DETAIL  */
+
+.date_detaille {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date {
+    color: #000000;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+
+
+.detaille {
+    color: #ff7700;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.detaille:hover {
+    text-decoration: underline;
+}

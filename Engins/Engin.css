@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+      /*  HEADER  */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 2%;
+    font-size: 1.1em;
+   
+}
+
+     /* LOGO  */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo .Gear {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF7700;
+}
+
+.logo .Force {
+    color: white;
+}
+
+     /* NAVIGATION */
+
+.mes_page ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mes_page ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+
+.mes_page ul li a span{
+    color: #ff6a00;
+}
+
+.mes_page ul li a:hover {
+    color: #ff6a00;
+}
+
+     /* CHARIOT ET PROFIL  */
+
+.chariot_connexion {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    gap: 2em;
+   
+}
+
+.chariot_connexion > i {
+    font-size: 1.2em;
+    cursor: pointer;
+   
+}
+
+.chariot_connexion > i:hover {
+    color: #ff6a00;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    cursor: pointer;
+}
+
+.profil img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #ff6a00;
+}
+
+.nom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.nom span {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.nom .fonction {
+    color: #ff6a00;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+
+
+      /*  BARRE DE RECHERCHE  */
+
+.recherche {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.9em 1.5em;
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.recherche i {
+    color: #aaa;
+    font-size: 1em;
+    
+}
+
+.recherche input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.95em;
+    color: #111;
+    background-color: transparent;
+}
+
+.recherche input::placeholder {
+    color: #aaa;
+}
+
+     /* TITRE PARCOURIR */
+
+.pacourir {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1.5em 0 1em 0;
+}
+
+
+     /* SECTION CATEGORIE */
+     
+.categorie {
+    background-color: #111;
+    padding: 1% 3%;
+}
+
+.machines {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5em 2em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    width: 70%;
+
+}
+
+
+.machines > span {
+    color: #111;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.machines > div {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+  
+}
+
+.tous {
+    background-color: #ff7700;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 0.5em 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.grise {
+    background-color: #f0f0f0;
+    color: #111;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 0.5em 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.grise:hover {
+    background-color: #ff7700;
+    color: white;
+    border-color: #ff7700;
+}
+
+
+     /*CHECKBOX */
+
+.machines label {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    color: #111;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.machines input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #ff7700;
+}
+
+
+
+      /* SECTION ENGINS */
+
+.engin {
+   
+    padding: 2% 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+
+.machine {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image_disponible {
+    position: relative;
+}
+
+.image_disponible img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.disponible {
+    position: absolute;
+    top: 0.6em;
+    left: 0.6em;
+    background-color: #16a34a;
+    color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 0.3em 0.7em;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.maintenance {
+    position: absolute;
+    top: 0.6em;
+    left: 0.6em;
+    background-color: #888;
+    color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 0.3em 0.7em;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+
+.nom_machine_prix {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.8em 1em 0.3em 1em;
+}
+
+.nom_machine_prix h3 {
+    color: white;
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.prix {
+    color: #ff7700;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    line-height: 1.4;
+}
+
+.prix span {
+    display: block;
+    color: #aaa;
+    font-size: 0.78em;
+    font-weight: normal;
+}
+
+
+.capaciter {
+    display: block;
+    color: #aaa;
+    font-size: 0.78em;
+    padding: 0 1em 0.8em 1em;
+    line-height: 1.4;
+}
+
+        /* VITESSE + PUISSANCE */
+.puissance_vitesse {
+    display: flex;
+    gap: 0.6em;
+    padding: 0 1em 0.8em 1em;
+}
+
+.vitesse,
+.puissance {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    background-color: #2a2a2a;
+    border-radius: 6px;
+    padding: 0.4em 0.7em;
+}
+
+.vitesse span,
+.puissance span {
+    color: white;
+    font-size: 0.78em;
+    line-height: 1.3;
+}
+
+.vitesse i,
+.puissance i {
+    flex-shrink: 0;
+}
+
+
+      /* BOUTON RESERVER */
+
+.reservation {
+    background-color: #ff7700;
+    border-radius: 6px;
+    padding: 0.7em;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 1em 1em 1em;
+    margin-top: auto;
+}
+
+.reservation span {
+    color: white;
+    font-weight: bold;
+    font-size: 0.82em;
+    letter-spacing: 0.04em;
+}
+
+.reservation:hover {
+    background-color: #e05d00;
+}
+
+
+
+       /* MA CARTE GPS */
+
+
+#map {
+    width: 100%;
+    height: 85vh;
+}
+
+
+
