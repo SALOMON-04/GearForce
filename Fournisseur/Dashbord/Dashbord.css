@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+      /*  HEADER  */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 2%;
+    font-size: 1.1em;
+    border-bottom: 1px solid #e5e2df;
+   
+}
+
+     /* LOGO  */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logo .Gear {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF7700;
+}
+
+.logo .Force {
+    color: white;
+}
+
+     /* NAVIGATION */
+
+.mes_page ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    margin-left: 40%;
+    padding: 0;
+    
+}
+
+.mes_page ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+.mes_page ul li a span{
+    color: #ff6a00;
+}
+
+.mes_page ul li a:hover {
+    color: #ff6a00;
+}
+
+
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    cursor: pointer;
+}
+
+.profil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #ff6a00;
+}
+
+.nom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    
+}
+
+.nom span {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.nom .fonction {
+    color: #ff6a00;
+    font-size: 0.7em;
+
+}
+
+
+
+.bonjour{
+
+    margin: 5% 7%;
+
+}
+.bonjour h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0 0 0.2em 0;
+}
+
+.bonjour  > span {
+
+    font-size: 1.1em;
+}
+
+
+
+
+      /* SECTION MINI BLOCK */
+
+.mini_block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 1% 3% 3% 3%;
+}
+
+        /* LIGNES HAUT ET BAS */
+
+.mini_block .haut,
+.mini_block .bas {
+    display: flex;
+
+}
+
+
+.resevation {
+    display: flex;
+    gap: 0.8em;
+    background-color: white;
+    border: 2px solid #ff7700;
+    border-radius: 12px;
+    padding: 2em;
+    margin: auto;
+    width: 20%;
+}
+
+.resevation div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.resevation div span {
+    color: #111;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.chiffre {
+    color: #ff7700;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+      /*  ICONES COULEURS  */
+
+.engrenage {
+    background-color: #7c6ef5;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.argent_sequestrer {
+    background-color: #d46ef5;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.location_engin {
+    background-color: #6ed45a;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.horloge {
+    background-color: #f5a96e;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+        /* BLOCK RESERVATION */
+
+.block_reservation {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5em;
+    margin: 7% auto;
+    font-family: sans-serif;
+    width: 70%;
+  
+}
+
+
+        /* TITRE + "VOIR TOUT */
+
+.ressente {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 1.5em;
+    
+}
+
+.ressente h3 {
+    font-size: 1.5em;;
+    font-weight: bold;
+    margin: 0;
+    color: #111827;
+}
+
+.voir_tout {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.bleue {
+    color: #185FA5;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+        /* TABLEAU */
+
+.tableau {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+
+
+
+.specifique th {
+    background: #f9fafb;
+    color: #6b7280;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding:  1%  2%;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.montant{
+    text-align: right !important;
+}
+
+
+.ligne td {
+    padding: 1.5%;
+    border-bottom: 1px solid #e5e7eb;
+    color: #111827;
+
+}
+
+
+.ligne:last-child td {
+    border-bottom: none;
+}
+
+
+.ligne:hover td {
+    background: #f9fafb;
+}
+
+
+        /* ID de réservation en bleu */
+
+.reserve {
+    font-weight: bold;
+    color: #185FA5;
+    font-size: 0.8em;
+}
+
+
+.montant_resa {
+    font-weight: 500;
+    text-align: right;
+}
+
+       /* Badges de statut */
+
+.en_cours {
+    background: #ffa200;  
+    color: #1e40af;
+    padding: 3px 10px;
+    border-radius: 20px; 
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.termine {
+    background: #8cff00;
+    color: #166534;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+          /* LE FOOTER */
+
+
+
+footer {
+    background-color: #111;
+    padding: 3% 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+
+.logo_Objectif {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    max-width: 250px;
+}
+
+.logo_Objectif .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.logo_Objectif .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.logo_Objectif .Gear {
+    color: #ff6a00;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.logo_Objectif .Force {
+    color: white;
+}
+
+.logo_Objectif .Objectif {
+    color: #aaa;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+      /* COLONNES */
+
+.plateforme,
+.ressource,
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.plateforme h3,
+.ressource h3,
+.social h3 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.plateforme div,
+.ressource div  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+
+.plateforme a{
+
+     color: #aaa;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.plateforme a:hover{
+    color: #ff6a00;
+}
+
+
+.ressource span {
+    color: #aaa;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+
+.ressource span:hover {
+    color: #ff6a00;
+}
+
+.ressource a{
+         color: #aaa;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ressource a:hover {
+    color: #ff6a00;
+}
+
+
+
+     /*RESEAUX SOCIAUX */
+
+.social div {
+    display: flex;
+    gap: 0.8em;
+}
+
+.social i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.4em;
+    border-radius: 6px;
+    color: #ff6a00 !important;
+}
+
+.social i:hover {
+    background-color: #ff6a00;
+    color: white !important;
+}
+
+
+     /* COPYRIGHT  */
+.copyright {
+    background-color: #111;
+    border-top: 1px solid #ff6a00;
+    text-align: center;
+    padding: 1.2% 5%;
+}
+
+.copyright p {
+    color: #aaa;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.copyright .Gear {
+    color: #ff6a00;
+    font-weight: bold;
+}
+
+.copyright .Force {
+    color: white;
+    font-weight: bold;
+}
+

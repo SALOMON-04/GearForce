@@ -772,23 +772,49 @@ footer {
 }
 
 .plateforme div,
-.ressource div {
+.ressource div  {
     display: flex;
     flex-direction: column;
     gap: 0.6em;
 }
 
-.plateforme span,
+
+.plateforme a{
+
+     color: #aaa;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.plateforme a:hover{
+    color: #ff6a00;
+}
+
+
 .ressource span {
     color: #aaa;
     font-size: 1.1em;
     cursor: pointer;
 }
 
-.plateforme span:hover,
+
 .ressource span:hover {
     color: #ff6a00;
 }
+
+.ressource a{
+         color: #aaa;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ressource a:hover {
+    color: #ff6a00;
+}
+
+
 
      /*RESEAUX SOCIAUX */
 

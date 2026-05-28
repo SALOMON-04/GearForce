@@ -350,8 +350,9 @@ body {
 
 .detail_commande {
     display: flex;
-    align-items: flex-start;
     gap: 2em;
+    padding: 8%;
+
 }
 
 
