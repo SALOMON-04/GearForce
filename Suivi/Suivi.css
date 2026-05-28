@@ -98,6 +98,7 @@ body {
     padding-top: 1.5em;
 }
 
+
 .machine_item {
     display: flex;
     align-items: center;
@@ -122,10 +123,15 @@ body {
     color: white;
 }
 
-.machine_item.actif {
+.machine_item .actif {
     background-color: #2a1500;
     color: white;
 }
+
+.Buldozer {
+    color: #FF7700;
+}
+
 
 
         /* BAS SIDEBAR */
@@ -184,7 +190,8 @@ body {
 }
 
 
-/* CONTENU PRINCIPAL*/
+      /* CONTENU PRINCIPAL*/
+
 .contenu {
 
     margin-left: 220px;
@@ -195,28 +202,30 @@ body {
 
 
 
-/* ===== CONTENU PRINCIPAL ===== */
+
 .contenu {
     margin-left: 220px;
     flex: 1;
     padding: 2em;
     box-sizing: border-box;
-    background-color: #1a0a00;
-    min-height: 100vh;
+
+
 }
 
-/* ===== SECTION ENTETE ===== */
+
+      /* SECTION ENTETE */
+
 .entete {
     display: flex;
     align-items: center;
     gap: 1em;
-    background-color: #2a1500;
+    background-color: #1A1D24;
     border-radius: 12px;
     padding: 1.2em 1.5em;
     margin-bottom: 2em;
 }
 
-/* ===== COMMANDE ===== */
+
 .commande {
     flex: 1;
     display: flex;
@@ -258,14 +267,16 @@ body {
     font-size: 0.78em;
 }
 
-/* ===== FOURNISSEUR ===== */
+
+       /* FOURNISSEUR */
+
 .fournisseur {
     flex: 1;
     display: flex;
     align-items: center;
     gap: 1em;
-    border-left: 1px solid #3a2500;
-    border-right: 1px solid #3a2500;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
     padding: 0 1.5em;
 }
 
@@ -300,21 +311,27 @@ body {
     font-size: 0.75em !important;
 }
 
-/* ===== TYPE SERVICE ===== */
+
+      /* TYPE SERVICE */
+
 .type_service {
     flex: 1;
     display: flex;
     align-items: center;
     gap: 0.8em;
-    border-left: 1px solid #3a2500;
     padding-left: 1.5em;
 }
 
 .type_service > i {
-    background-color: #2563eb;
-    padding: 0.5em;
+    background-color: #0004ff;
+    font-size: 0.9em;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
-    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .detail h3 {
@@ -326,19 +343,23 @@ body {
 .nom_engin {
     color: #aaa;
     font-size: 0.78em;
-    line-height: 1.4;
+  
 }
 
-/* ===== SECTION DETAIL + PAIEMENT ===== */
+        /* SECTION DETAIL */
+
 .detail_commande {
     display: flex;
     align-items: flex-start;
     gap: 2em;
 }
 
-/* ===== GAUCHE : DETAIL COMMANDE ===== */
+
+        /* GAUCHE : DETAIL COMMANDE */
+
 .gauche {
-    background-color: #2a1500;
+    background-color: #1A1D24;
+    border: 2px solid rgb(183, 183, 183);
     border-radius: 12px;
     padding: 1.5em;
     flex: 1;
@@ -353,7 +374,9 @@ body {
     margin: 0;
 }
 
-/* image + nom engin */
+
+        /* image + nom engin */
+
 .image_engin {
     display: flex;
     align-items: center;
@@ -365,7 +388,7 @@ body {
     height: 70px;
     object-fit: cover;
     border-radius: 8px;
-    flex-shrink: 0;
+
 }
 
 .image_engin h3 {
@@ -385,8 +408,11 @@ body {
     font-weight: bold;
 }
 
-/* lignes details */
+
+      /* lignes details */
+
 .engin_verifier {
+    
     display: flex;
     flex-direction: column;
     gap: 0.6em;
@@ -394,7 +420,7 @@ body {
 
 .engin_verifier hr {
     border: none;
-    border-top: 1px solid #3a2500;
+    border-top: 1px solid #e3e3e3;
     margin: 0.2em 0;
 }
 
@@ -404,7 +430,6 @@ body {
 .assurance {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .periode span,
@@ -424,15 +449,18 @@ body {
     color: white !important;
 }
 
-/* ===== DROITE : RESUME PAIEMENT ===== */
+       /* DROITE : RESUME PAIEMENT */
+
 .resumer {
+    border: 2px solid rgb(255, 98, 0);
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
 }
 
-/* bloc resume */
+            /* bloc resume */
+
 .montant_tol,
 .sequestre,
 .paye,
@@ -442,15 +470,10 @@ body {
     align-items: center;
 }
 
-.resumer > div:first-child {
-    background-color: #2a1500;
-    border-radius: 12px;
-    padding: 1.2em 1.5em;
-}
 
-/* on regroupe les lignes dans un bloc */
+
 .resumer {
-    background-color: #2a1500;
+    background-color: #1A1D24;
     border-radius: 12px;
     padding: 1.5em;
 }
@@ -462,7 +485,8 @@ body {
     font-size: 0.85em;
 }
 
-.montant_tol span:last-child {
+.montant_tol span {
+
     color: white;
     font-weight: bold;
     font-size: 0.9em;
@@ -481,29 +505,45 @@ body {
 .restant {
     display: flex;
     flex-direction: column;
-    gap: 0.4em;
+    gap: 1em;
 }
 
 .restant hr {
-    width: 100%;
     border: none;
-    border-top: 1px solid #3a2500;
+     border-top: 1px solid #ff6f00;
+    width: 100%;
     margin: 0;
 }
 
-.restant span:nth-child(2) {
+.ligne  {
+    display: flex;
+    justify-content: space-between ;
+    width: 100%;
+}
+
+
+.reste {
     color: #ff7700;
     font-size: 0.85em;
 }
 
-.restant span:nth-child(3) {
+.motant_restant {
     color: #ff7700;
     font-weight: bold;
     font-size: 0.95em;
-    align-self: flex-end;
 }
 
-/* sablier */
+      /* sablier */
+
+.sablille {
+    display: flex;
+    gap: 5%;
+}
+
+.sablille i {
+    margin-top: 2%;
+}
+
 .sablille span {
     color: #aaa;
     font-size: 0.78em;
@@ -513,9 +553,11 @@ body {
     gap: 0.5em;
 }
 
-/* ===== MOYEN PAIEMENT ===== */
+     /* MOYEN PAIEMENT */
+
 .moyen_paiement {
-    background-color: #2a1500;
+    background-color: #1A1D24;
+    border: 2px solid rgb(255, 98, 0);
     border-radius: 12px;
     padding: 1.5em;
     display: flex;
@@ -549,7 +591,8 @@ body {
     color: #ff7700 !important;
 }
 
-/* bouton payer */
+        /* bouton payer */
+
 .orange {
     background-color: #ff7700;
     border-radius: 8px;
