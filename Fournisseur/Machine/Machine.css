@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+      /*  HEADER  */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 2%;
+    font-size: 1.1em;
+    border-bottom: 1px solid #e5e2df;
+   
+}
+
+     /* LOGO  */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logo .Gear {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF7700;
+}
+
+.logo .Force {
+    color: white;
+}
+
+     /* NAVIGATION */
+
+.mes_page ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    margin-left: 25%;
+    padding: 0;
+    
+}
+
+.mes_page ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+.mes_page ul li a span{
+    color: #ff6a00;
+}
+
+.mes_page ul li a:hover {
+    color: #ff6a00;
+}
+
+
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    cursor: pointer;
+}
+
+.profil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #ff6a00;
+}
+
+.nom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    
+}
+
+.nom span {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.nom .fonction {
+    color: #ff6a00;
+    font-size: 0.7em;
+
+}
+
+
+
+.enregistrement {
+    padding: 5%;
+
+}
+
+.enregistrement h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.enregistrement span {
+    color: #ff6a00;
+    font-size: 1em;
+}
+
+
+        /* SECTION */
+
+
+
+.engin_enrgeistre {
+    display: flex;
+    gap: 2em;
+    padding: 2% 3%;
+    align-items: flex-start;
+}
+
+
+        /* COLONNE GAUCHE */
+
+.gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    flex: 1;
+}
+
+
+        /* COLONNE DROITE  */
+
+.droite {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 35%;
+    flex-shrink: 0;
+}
+
+        
+         /* PARTIE DROITE */
+
+
+       /* DIV SPECIFICATION */
+
+.specification {
+    background: #1A1D24;
+    border: 1px solid #ff8500;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+
+}
+
+
+        /* TITRE */
+
+.specification .titre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 2%;
+    
+}
+
+
+.specification hr {
+    border: none;
+    border-top: 1px solid #ff8500;
+    margin: 0;
+    padding: 2%;
+    
+}
+
+
+
+        /* FORMULAIRE */
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin: auto;
+}
+
+
+.formulaire label {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #FFE7A6;
+    margin-bottom: 8px;
+    padding: 1%;
+}
+
+
+.obligatoire {
+    color: #ff0000;
+}
+
+
+.formulaire input,
+.formulaire select {
+    width: 100%;
+    padding: 12px 14px;
+    background: #111111;
+    border: 1.5px solid #ff8500;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.formulaire input::placeholder {
+    color: #555;
+}
+
+.formulaire input:focus,
+.formulaire select:focus {
+    border-color: #ffaa44;
+}
+
+
+.formulaire select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ff8500' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    cursor: pointer;
+}
+
+.formulaire select option {
+    background: #1A1D24;
+    color: #ffffff;
+}
+
+
+.categorie_modele {
+    display: flex; 
+    gap: 10%;
+}
+
+.categorie_modele > div {
+    flex: 1; 
+}
+
+
+.poids_puissance { 
+    display: flex ;
+    gap: 10%;
+    
+}
+
+.poids_puissance > div {
+    flex: 1;
+}
+
+
+.dimention {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dimension_input { 
+    display: flex;
+    gap: 10px;
+}
+
+.dimension_input input {
+    flex: 1; 
+}
+
+
+.montant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.montant label {
+    text-align: center;
+    display: block;
+}
+
+.montant input {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px;
+    color: #aaa;
+    width: 100%;
+}
+
+
+
+
+        /*  DOCUMENT TECHNIQUES  */
+
+.document {
+    background-color: #1A1D24;
+    border: 1px solid #ff8500;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  
+}
+
+
+
+        /* TITRE  */
+
+.document .titre {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.document .titre i {
+    color: #ff8500;
+    font-size: 1.3em;
+}
+
+
+        /* ZONE DE TELECHARGEMENT */
+
+.boite-telechargement input[type="file"] {
+    display: none;
+}
+
+.document_telecharge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+    background-color: #1A1D24;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 2em 1.5em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.icone-upload {
+    color: #ff8500;
+    font-size: 2em;
+}
+
+.document_telecharge h3 {
+    color: white;
+    font-size: 0.88em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.texte-format {
+    color: #aaa;
+    font-size: 0.78em;
+    margin: 0;
+}
+
+
+.btn-parcourir {
+    border: 2px solid #ff8500;
+    color: #ff8500;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 0.6em 2em;
+    border-radius: 6px;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.btn-parcourir:hover {
+    background-color: #ff8500;
+    color: white;
+}
+
+
+
+        /* FICHIER ITEM */
+
+.fichier-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #1A1D24;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0.8em 1em;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
+.fichier-item:hover {
+    background-color: #2a2a2a;
+    border-color: #ff8500;
+    transform: translateX(5px); 
+}
+
+.fichier-item > i {
+    font-size: 1.4em;
+
+}
+
+
+
+
+        /* INFO FICHIER */
+
+.fichier-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    flex: 1;
+}
+
+.fichier-nom {
+    color: white;
+    font-size: 0.88em;
+    font-weight: bold;
+}
+
+.fichier-meta {
+    color: #aaa;
+    font-size: 0.78em;
+}
+
+
+
+      /* CARTE APERCU  */
+
+.apercu {
+    background-color: #1A1D24;
+    border: 2px solid #ff8500;
+    border-radius: 12px;
+    padding: 1.2em;
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+}
+
+
+
+.nouveau {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nouveau span:first-child {
+    color: white;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.notifier {
+    background-color: transparent;
+    border: 2px solid #ff8500;
+    color: #ff8500;
+    font-size: 0.85em;
+    font-weight: bold;
+    padding: 0.3em 1em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+        /* IMAGE  */
+
+.apercu-image img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+}
+
+
+.apercu-nom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apercu-nom h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.statut-actif {
+    color: #4caf50;
+    font-size: 0.85em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.statut-actif i {
+    font-size: 0.6em;
+}
+
+
+.apercu-grille {
+    display: flex;
+    gap: 10%;
+}
+
+.information {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 0.8em;
+    flex: 1;
+}
+
+.information i {
+    color: #ff8500;
+    font-size: 1.2em;
+    flex-shrink: 0;
+}
+
+.information div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.info_detail {
+    color: #aaa;
+    font-size: 0.75em;
+}
+
+.info_valeur {
+    color: white;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.connecte {
+    color: #4caf50 ;
+}
+
+
+
+
+/* BOUTON FINALISER  */
+
+.finaliser {
+    background-color: #ff8500;
+    border-radius: 8px;
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin-top: 10%;
+}
+
+.finaliser a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.finaliser i{
+    font-size: 1.5em;
+}
+
+.finaliser:hover {
+    background-color: #c97d00;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 133, 0, 0.4);
+}
+

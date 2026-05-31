@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Machine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <title>Machine</title>
+</head>
+
+<body>
+
+
+    <!-- Ici ce trouve le Header -->
+    <header>
+        <!-- LOGO -->
+
+        <div class="logo">
+            <img src="../../Image/logo.png" alt="logo de la page">
+            <span class="Gear">Gear<span class="Force">Force</span></span>
+
+        </div>
+
+        <nav class="mes_page">
+
+            <ul>
+
+                <li>
+                    <a href=""><span>Dashbord</span></a>
+                </li>
+
+                <li>
+                    <a href="">Machines</a>
+                </li>
+
+                <li>
+                    <a href="">Gestionnaire</a>
+                </li>
+
+                <li>
+                    <a href="">Transaction</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+        <div class="connexion">
+
+            <div class="profil">
+
+                <img src="../../Image/perso3.png" alt="profil de l'utilisateru">
+                <div class="nom">
+                    <span>KABLAN AKRADJO</span>
+                    <span class="fonction">CHEF DE CHANTIER</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="enregistrement">
+        <h3>Enrégistrement d’une nouvelle machine</h3>
+        <span>Documentation technique et documentation réguliaire pour l’intégration au système de télémétrie</span>
+    </div>
+
+
+    <section class="engin_enrgeistre">
+
+        <!-- DIV SPECIFICATION -->
+
+        <div class="gauche">
+
+
+            <div class="specification">
+
+                <span class="titre"><i class="fa-solid fa-traffic-light" style="color: rgb(255, 133, 0);"></i>
+                    Spécification Technique</span>
+                <hr>
+
+                <form class="formulaire">
+
+                    <div class="categorie_modele">
+
+                        <div class="Categorie">
+
+                            <label>catégoriede l'engin <span class="obligatoire">*</span></label>
+                            <select required>
+                                <option value="">Sélectionnez </option>
+                                <option value="PH">Pelle hydraulique</option>
+                                <option value="BR">Buldozer</option>
+                                <option value="CH">Chargeuse</option>
+                                <option value="GR">Grue</option>
+                                <option value="NI">Niveleuse</option>
+                                <option value="NE">Nacelle élévatrice</option>
+                                <option value="TO">Tombereau</option>
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="modele">
+                            <label>Modèle / Identifiant <span class="obligatoire">*</span></label>
+                            <input type="text" placeholder="ex : CAT 340 QC" required>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="poids_puissance">
+
+                        <div class="Poids">
+                            <label>Poids opérationnel (Kg) <span class="obligatoire">*</span></label>
+                            <input type="number" placeholder="22500" required>
+                        </div>
+
+
+                        <div class="puissance">
+                            <label>Puissance moteur (KW) <span class="obligatoire">*</span></label>
+                            <input type="number" placeholder="325" required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="dimention">
+
+                        <div class="Longeur">
+                            <label>Dimension Hors-tout (L x l x H) en mètre <span class="obligatoire">*</span></label>
+                            <div class="dimension_input">
+                                <input type="number" placeholder="ex : Longeur" required>
+                                <input type="number" placeholder="largeur" required>
+                                <input type="number" placeholder="Hoteur">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="montant">
+                        <label>Montan de la location par jour <span class="obligatoire">*</span></label>
+                        <input type="number" placeholder="Ex: 200 000FCFA" required>
+                    </div>
+
+                </form>
+
+
+            </div>
+
+
+            <div class="document">
+
+                <span class="titre">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    Documents techniques
+                </span>
+
+                <div class="boite-telechargement">
+
+                    <input type="file" id="fichier" name="documents" accept=".jpg,.jpeg,.png,.pdf" multiple>
+
+                    <label for="fichier" class="document_telecharge">
+
+                        <i class="fa-solid fa-download icone-upload"></i>
+                        <h3>Glissez et déposez vos certificats et assurances ici</h3>
+                        <p class="texte-format">PDF , JPG et PNG accepté ( au plus 25Mo par fichier )</p>
+                        <span class="btn-parcourir">Parcourir les fichiers</span>
+
+                    </label>
+
+                </div>
+
+                <div class="fichier-item">
+
+                    <i class="fa-regular fa-file-lines" style="color: rgb(6, 255, 0);"></i>
+
+                    <div class="fichier-info">
+                        <div class="fichier-nom">Certificat_Securité_V1_pdf</div>
+                        <div class="fichier-meta">2.4 Mo · Ajouté le 18 / 05 / 2026</div>
+                    </div>
+
+                    <i class="fa-solid fa-check" style="color: rgb(6, 255, 0);"></i>
+                </div>
+
+                <div class="fichier-item">
+
+                    <i class="fa-regular fa-file-lines" style="color: rgb(6, 255, 0);"></i>
+                    <div class="fichier-info">
+                        <div class="fichier-nom">Assurance_Atlantic_pdf</div>
+                        <div class="fichier-meta">2.4 Mo · Ajouté le 18 / 05 / 2026</div>
+                    </div>
+                    <i class="fa-solid fa-check" style="color: rgb(6, 255, 0);"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="droite">
+
+            <div class="apercu">
+
+
+                <div class="nouveau">
+
+                    <span>Aperçu de l'équipement</span>
+                    <span class="notifier">Nouveau</span>
+                </div>
+
+
+                <div class="apercu-image">
+
+                    <img src="../../Image/image3.jpg" alt="image d'une pelle hydraulique">
+
+                </div>
+
+
+                <div class="apercu-nom">
+
+                    <h2>Escavatrice CAT 340 QC</h2>
+                    <span class="statut-actif">
+                        <i class="fa-solid fa-circle"></i> Actif
+                    </span>
+
+                </div>
+
+
+                <div class="apercu-grille">
+
+                    <div class="information">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <span class="info_detail">Heure d'utilisation</span>
+                            <span class="info_valeur">1 256 h</span>
+                        </div>
+                    </div>
+
+                    <div class="information">
+
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span class="info_detail">Localisation actuel</span>
+                            <span class="info_valeur">Abidjan, Cote d'Ivoire</span>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="apercu-grille">
+
+                    <div class="information">
+
+                        <i class="fa-solid fa-wifi"></i>
+                        <div>
+                            <span class="info_detail">Status système</span>
+                            <span class="info_valeur connecte">Connecté</span>
+                        </div>
+
+                    </div>
+
+                    <div class="information">
+
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <span class="info_detail">Dernier signal</span>
+                            <span class="info_valeur">Il y'a 2 minutes</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            
+                <div class="finaliser">
+                    <i class="fa-solid fa-floppy-disk" style="color: white;"></i>
+                    <a>Finaliser l'enregistrement</a>
+                </div>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 2%;
+
+   
+}
+
+
+    /* LOGO  */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.logo .Gear {
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FF7700;
+}
+
+.logo .Force {
+
+    color: white;
+}
+
+
+
+.se_connecte{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    gap: 40px;
+
+
+}
+
+
+.deja_compte {
+    font-size: 1.2em;
+    font-weight: bold;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.Connecter{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 3%;
+    width: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.Connecter:hover{
+    color: black;
+    background-color: #c97d00;
+}
+
+
+
+
+              /* SECRION COMPTE */
+
+
+.Compte{
+    display: flex;
+    background-image: url('../../Image/image11.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+
+.Compte_fournisseur{
+     background-image: url('../../Image/image12.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.Compte::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Compte > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+      /* PARTIE GAUCHE */
+
+
+
+.gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    padding-top: 10% ;
+    margin: 2%;
+
+}
+
+
+
+
+
+.votre_compte {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.blanc {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.votre_compte h3 {
+    color: #ec9100;
+    font-size: 2.1em;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+
+.rejoindre {
+    color: #ccc;
+    font-size: 1.2em;
+    width: 80%;
+    
+}
+
+
+
+        /* ICONES */
+
+.icone {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    font-size: 1.2em;
+}
+
+.icone span {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    color: white;
+    font-size: 0.9em;
+}
+
+.icone span i {
+   font-size: 1.2em;
+    width: 18px;
+    text-align: center;
+}
+
+
+        /* SECURITE + ESTIMATION */
+
+.securiter_estimation {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: auto;
+}
+
+
+
+        /* BLOC SECURITE  */
+
+.votre_securiter {
+    background-color:#1A1D24;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    font-size: 1.1em;
+    width: 63%;
+}
+
+.notre_prioriter {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+
+.notre_prioriter i{
+    font-size: 1.4em;
+}
+
+
+.detail {
+    color: #aaa;
+    font-size: 0.82em;
+    margin-left: 10%;
+}
+
+
+
+        /* BLOC ESTIMATION */
+
+.estimation {
+    background-color: #1A1D24;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.1em;
+    width: 65%;
+}
+
+.equipement {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.equipement > i {
+    font-size: 1em;
+    flex-shrink: 0;
+}
+
+.cotat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+
+.cotat h3 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cotat span {
+    color: #aaa;
+    font-size: 0.8em;
+}
+
+
+
+
+     /* PARTIE GAUCHE */
+
+
+
+
+        /* CHOIX FONCTION  */
+
+
+.choix_fonction {
+    display: flex;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.4em;
+    margin: auto;
+}
+
+.utilisateur,
+.fournisseur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.8em;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-top: 2px solid #a0a0a0;
+    border-right: 2px solid #a0a0a0; 
+    
+}
+
+.utilisateur {
+    background-color: #ff800050; 
+}
+
+.utilisateur i,
+.utilisateur h3 {
+    color: #ec9100;
+}
+
+.fournisseur {
+    background-color: #2a2a2a; 
+}
+
+.fournisseur i {
+    color: white;
+}
+
+.fournisseur h3 {
+    color: white;
+}
+
+.utilisateur h3,
+.fournisseur h3 {
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.utilisateur i,
+.fournisseur i {
+    font-size: 1.3em;
+}
+
+
+.utilisateur:hover,
+.fournisseur:hover {
+    background-color: #2a1500;
+    cursor: pointer;
+}
+
+.utilisateur:hover h3,
+.fournisseur:hover h3 {
+    color: #ec9100;
+}
+
+.utilisateur:hover i,
+.fournisseur:hover i {
+    color: #ec9100;
+}
+
+
+.gauche_fournisseur {
+    display: none; 
+}
+
+
+.gauche_utilisateur,
+.gauche_fournisseur {
+    width: 35%;
+    flex-shrink: 0;
+}
+
+
+.formulaire {
+    width: 100%;
+    box-sizing: border-box;
+}
+    
+
+
+
+        /* PARTIE DROITE */
+
+
+.droite {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 5%;
+    flex: 1;
+    overflow-y: auto;
+
+}
+
+.obligatoire {
+    color: red;
+    font-size: 0.9em;
+}
+
+
+        /* FORMULAIRE  */
+
+
+.formulaire {
+    background-color: #1A1D24;
+    border-radius: 12px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: auto;
+    width: 98%;
+}
+
+
+
+.information_personel,
+.adresse_personnel,
+.Securite_compte{
+    margin: 3%;
+}
+
+
+        /* TITRE SECTION */
+
+.INFO {
+    display: flex;
+    flex-direction: row ;
+    align-items: center ;
+    gap: 0.4em;
+    margin-bottom: 3%;
+}
+
+.INFO h3 {
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0;
+
+
+}
+
+.ligne_hr {
+    flex: 1;
+    height: 0.5px;
+    background-color: #6b6b6b;
+}
+
+
+
+    /* LABELS  */
+
+label {
+    color: #ccc;
+    font-size: 0.82em;
+    margin-bottom: 0.3em;
+    display: block;
+    padding: 1%;
+}
+
+
+
+        /*  INPUTS  */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    flex: 1;
+    width: 100%;
+    background-color: #1A1D24;
+    border: 1px solid #797979;
+    border-radius: 8px;
+    padding: 0.7em 0.9em;
+    color: white;
+    font-size: 0.8em;
+    box-sizing: border-box;
+}
+
+
+input[type="date"] {
+    color-scheme: dark;
+}
+
+input::placeholder {
+    color: #555;
+}
+
+
+
+select option {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+
+        /*  LIGNES DOUBLE  */
+
+
+.nom_date,
+.identiter_delivrance,
+.email_telephone,
+.pays_ville,
+.adresse_code,
+.Code_confimatio {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    margin: 0;
+    gap: 10%;
+}
+
+.nom_date > div,
+.identiter_delivrance > div,
+.email_telephone > div,
+.pays_ville > div,
+.adresse_code > div,
+.Code_confimatio > div {
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.nom_date > div,
+.identiter_delivrance > div,
+.email_telephone > div,
+.pays_ville > div,
+.adresse_code > div,
+.Code_confimatio > div {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+
+        /*  NATIONALITE  */
+
+.nationalite {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+
+.numeo_indicatif {
+    display: flex;
+    gap: 0.5em;
+}
+
+.indicatif {
+    width: 5% !important;
+
+}
+
+.numero {
+    flex: 1;
+}
+
+
+        /* MOT DE PASSE  */
+
+.code_secure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.code_secure i {
+    position: absolute;
+    right: 0.8em;
+    bottom: 0.8em;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+        /* DOCUMENT VERIFICATION  */
+
+.garant {
+    color: #aaa;
+    font-size: 0.82em;
+    display: block;
+    margin: 2%;
+}
+
+.conteneur-telechargement {
+    display: flex;
+    gap: 1em;
+}
+
+.boite-telechargement {
+    flex: 1;
+}
+
+.boite-telechargement input[type="file"] {
+    display: none;
+}
+
+.etiquette-telechargement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #1A1D24;
+    border: 2px dashed #444;
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.etiquette-telechargement:hover {
+    border-color: #ec9100;
+}
+
+.enveloppe-icone {
+    background-color: #333;
+    padding: 0.6em;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+.etiquette-telechargement h3 {
+    color: white;
+    font-size: 0.82em;
+    margin: 0;
+}
+
+.texte-format {
+    color: #aaa;
+    font-size: 0.75em;
+    margin: 0;
+}
+
+.texte-action {
+    color: #555;
+    font-size: 0.75em;
+    margin: 0;
+}
+
+
+        /* CHECKBOX */
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6em;
+    padding: 2%;
+    font-size: 1em;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #ec9100;
+    margin-top: 1%;
+    
+}
+
+.checkbox span {
+    color: #aaa;
+    width: 100%;
+}
+
+.checkbox .orange {
+    color: #ec9100;
+    cursor: pointer;
+}
+
+
+        /* BOUTON CREER COMPTE */
+
+.crer_mon_compte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    
+}
+
+.Mon_compte {
+    background-color: #ec9100;
+    border-radius: 8px;
+    padding: 0.9em;
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.Mon_compte a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.Mon_compte:hover {
+    background-color: #c97d00;
+}
+
+.crer_mon_compte > span {
+    color: #aaa;
+    font-size: 1em;
+}
+
+
+        /* GOOGLE + FACEBOOK */
+
+.alternative {
+    display: flex;
+    width: 90%;
+    gap: 10%;
+}
+
+.google,
+.facebook {
+    flex: 1;
+    background-color: #1A1D24;
+    border: 1px solid #cdcdcd;
+    border-radius: 8px;
+    width: 80%;
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+.google img,
+.facebook img {
+    align-items: center;
+    margin: auto;
+    height: 30px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.facebook img{
+    font-size: 40px !important;
+}
+
+.google:hover,
+.facebook:hover {
+    border-color: #ec9100;
+    transform: translateY(-3px); 
+    transition: transform 0.2s ease;
+}
